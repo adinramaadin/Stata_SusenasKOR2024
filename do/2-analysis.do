@@ -58,7 +58,13 @@ dir "$susenas2023kp\"
 *==============================================================================
 /*Definisi
 	1. PAUD: sejak lahir sampai 6 tahun (Kemendikdasmen, )
-	2. 
+	2. APK adalah perbandingan antara siswa pada jenjang pendidikan tertentu 
+	   dengan penduduk usia sekolah dan dinyatakan dalam persentase.
+	   APKj = (Siswa j : Penduduk us j) x 100
+	   - Kriteria : Makin tinggi APK berarti makin banyak anak usia sekolah 
+		 yg bersekolah di jenjang pendidikan tertentu atau banyak anak di luar usia sekolah.
+	   - Kegunaan : Untuk mengetahui banyaknya siswa yang bersekolah pada jenjang pendidikan tertentu.
+	3. Miskin
 */
 
 mkf dataind_cop
