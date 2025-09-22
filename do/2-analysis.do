@@ -1,5 +1,5 @@
 /*****************************FILE HEADER**************************************
-* PROJECT    : Child Development Indicators Analysis - SUSENAS 2023
+* PROJECT    : Child Development Indicators Analysis - SUSENAS 2024
 * FILE       : 01_child_development_analysis.do  
 * AUTHOR     : Adin
 * DATE       : September 21, 2025
@@ -8,14 +8,15 @@
 * PURPOSE    : This do file analyzes key child development indicators using 
 *              SUSENAS 2023 data across multiple domains:
 *              
-*              1. Cognitive Development - PAUD participation by region and 
-*                 disability status 
+*              1. Cognitive Development - PAUD participation by region,
+*                 poverty status, and gender (ages 0-6)
 *              2. Basic Education - Gross enrollment rates in primary 
 *                 education by region, disability status, poverty, and gender
 *              3. Social Development - Poor Household/Families 
 *				  with children (0-17 years)
 *
-* DATA       : SUSENAS March 2024 (Kor & KP modules)
+* DATA       : "$dta/dataind_clean.dta" (cleaned data)
+* OUTPUT     : LaTeX tables and summary statistics for publication
 * FOCUS      : Regional disparities and inclusion of children with disabilities
 ******************************************************************************/
 
@@ -51,99 +52,55 @@ dir "$susenas2024\"
 dir "$susenas2023kor\"
 dir "$susenas2023kp\"
 
-*==============================================================================
-* DATA IMPORT AND PREPARATION
-*==============================================================================
-
-*------------------------------------------------------------------------------
-* HOUSEHOLD DATA (RUMAH TANGGA)
-*------------------------------------------------------------------------------
-// Start log
-// log using "$logs/1-descriptive.log", text replace
-
-frame rename default datart
-import dbase using "$susenas2024/ssn202403_kor_rt.dbf"
-
-// Apply labels and value labels
-do "$dos/011-labeldanval.do"
-
-// Order variables and standardize naming
-order URUT-R102 kode_kabkota
-rename URUT-FWT, lower
-
-// Save household data
-save "$dta/datart.dta", replace
-
-/* Verification check
-tabulate kode_kabkota if inrange(kode_kabkota, 1570, 1575), missing
-*/ 
-
-label drop _all // this to avoid conflict for the next label do
-
-*------------------------------------------------------------------------------
-* INDIVIDUAL DATA PART 1
-*------------------------------------------------------------------------------
-frame create dataind1
-frame change dataind1
-import dbase "$susenas2024\ssn202403_kor_ind1.dbf", clear
-save "$dta/dataind1.dta", replace
-
-*------------------------------------------------------------------------------
-* INDIVIDUAL DATA PART 2
-*------------------------------------------------------------------------------
-frame create dataind2
-frame change dataind2
-import dbase "$susenas2024\ssn202403_kor_ind2.dbf", clear
-save "$dta/dataind2.dta", replace
-
-/*------------------------------------------------------------------------------
-* MIGRATION DATA (Optional - currently commented out)
-*------------------------------------------------------------------------------
-frame create datamig
-frame change datamig
-import dbase "$susenas2024\ssn202403_kor_mig.dbf", clear
-*/
-
-/* Mig
-frame create datamig
-frame change datamig
-import dbase "$susenas2024\ssn202403_kor_mig.dbf", clear
-*/
-
-*------------------------------------------------------------------------------
-* MERGE INDIVIDUAL DATASETS
-*------------------------------------------------------------------------------
-use "$dta/dataind1.dta", clear 
-merge 1:1 PSU SSU STRATA R101 R102 R105 R401 using "$dta/dataind2.dta"
-
-// Check merge results
-tab _merge
-drop _merge
-
-// Save merged individual data
-save "$dta/dataind_m.dta", replace
-
-*------------------------------------------------------------------------------
-* APPLY LABELS TO INDIVIDUAL DATA
-*------------------------------------------------------------------------------
-use "$dta/dataind_m.dta", clear
-do "$dos/012-labeldanval.do"
-
-// Order variables and standardize naming
-order URUT-R102 kode_kabkota
-rename URUT-R305, lower
-
-// Save final individual dataset
-save "$dta/dataind_clean.dta", replace
 
 *==============================================================================
 * DATA ANALYSIS SECTION
 *==============================================================================
+/*Definisi
+	1. PAUD: sejak lahir sampai 6 tahun (Kemendikdasmen, )
+	2. 
+*/
+
+mkf dataind_cop
+frame dataind_cop: use "$dta\dataind_clean.dta"
+cwf dataind_cop
 
 *------------------------------------------------------------------------------
-* 1. COGNITIVE DEVELOPMENT - PAUD PARTICIPATION
+* 1. PAUD Participation Analysis: Cognitive Development Patterns
+*    Early Childhood Education Access 
+*     by Region, Gender, and Socioeconomic Status
 *------------------------------------------------------------------------------
 // [Analysis code to be added here]
+
+* Filter to PAUD target age group (0-6 years)
+keep if r407 >= 0 & r407 <= 6
+
+* Summary of PAUD participation (r605)
+tab r605 [fw = round(weind)]
+estpost tab r605 [fw=round(weind)]
+esttab using "table1_paud_status.tex", replace ///
+    cells("b(fmt(0)) pct(fmt(1))") ///
+    title("PAUD Participation Status (Ages 0-6)") ///
+    collabels("N" "Percent") ///
+    noobs
+
+* Provincial rates (ever participated = r605 codes 1-3)
+preserve
+gen participated = (r605 <= 3) if !missing(r605)
+collapse (mean) paud_rate=participated (count) n=participated [pw=fwt], by(r101)
+sort paud_rate
+
+* Export top and bottom provinces
+gen rank = _n
+listtex rank r101 paud_rate n using "table2_provinces.tex", replace ///
+    head("\begin{tabular}{cccc}" ///
+         "\hline" ///
+         "Rank & Province & PAUD Rate & N \\" ///
+         "\hline") ///
+    foot("\hline" ///
+         "\end{tabular}") ///
+    rstyle(tabular)
+restore
 
 *------------------------------------------------------------------------------
 * 2. BASIC EDUCATION - PRIMARY ENROLLMENT RATES
@@ -158,3 +115,4 @@ save "$dta/dataind_clean.dta", replace
 
 * Close log
 log close
+
