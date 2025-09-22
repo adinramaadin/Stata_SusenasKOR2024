@@ -1,0 +1,1508 @@
+/*==============================================================================
+ VARIABLE LABELS FOR SUSENAS INDIVIDUAL DATA
+ Created: 24/09/25
+ Author : Adin
+ Purpose: Label variables for comprehensive individual survey analysis
+==============================================================================*/
+
+*------------------------------------------------------------------------------
+* SAMPLING AND IDENTIFICATION VARIABLES
+*------------------------------------------------------------------------------
+label variable URUT        "renumbering nurt"
+label variable PSU         "Probability Sampling Unit"
+label variable SSU         "Secondary Sampling Unit"
+label variable STRATA      "Strata"
+label variable WI1         "renumbering nks"
+label variable WI2         "renumbering nurt (Kode rumah rangga)"
+
+*------------------------------------------------------------------------------
+* GEOGRAPHIC VARIABLES
+*------------------------------------------------------------------------------
+label variable R101        "Provinsi"
+label variable R102        "Kabupaten/kota"
+label variable R105        "Tipe daerah (perkotaan/perdesaan)"
+
+*------------------------------------------------------------------------------
+* INDIVIDUAL IDENTIFICATION
+*------------------------------------------------------------------------------
+label variable R401        "Nomor urut art"
+label variable R403        "Hubungan dengan krt"
+label variable R404        "Status perkawinan"
+label variable R405        "Jenis kelamin"
+label variable R406A       "Tanggal lahir"
+label variable R406B       "Bulan lahir"
+label variable R406C       "Tahun lahir"
+label variable R407        "Umur"
+label variable R408        "Apakah pasangan biasanya tinggal di rumah tangga ini"
+label variable R409        "Umur perkawinan pertama"
+label variable R410        "Nomor urut pemberi informasi"
+
+*------------------------------------------------------------------------------
+* CIVIL REGISTRATION AND DOCUMENTATION
+*------------------------------------------------------------------------------
+label variable R501        "Apakah memiliki buku nikah"
+label variable R502        "Nomor urut keluarga"
+label variable R503        "Nomor urut ibu kandung"
+label variable R504        "Apakah mempunyai NIK"
+label variable R506        "Kode jenis kelamin berdasarkan NIK"
+label variable R507        "Sumber data NIK"
+label variable R508        "Apakah memiliki akta kelahiran"
+label variable R509        "Apakah isian 506=405"
+
+*------------------------------------------------------------------------------
+* MIGRATION AND BIRTHPLACE
+*------------------------------------------------------------------------------
+label variable R601        "Provinsi tempat lahir"
+label variable R602        "Kabupaten/kota tempat lahir"
+label variable R603        "Provinsi tempat tinggal 5 tahun yang lalu"
+label variable R604        "Kabupaten/kota tempat tinggal 5 tahun yang lalu"
+
+*------------------------------------------------------------------------------
+* EDUCATION MODULE
+*------------------------------------------------------------------------------
+// Pre-school education
+label variable R605        "Apakah Sedang/pernah mengikuti pra sekolah"
+label variable R606        "Apa jenis pra sekolah"
+label variable R606_A      "Sedang/pernah mengikuti kursus pengembangan"
+label variable R606_B      "Sedang/pernah mengikuti kursus bukan pengembangan"
+label variable R606_X      "Tidak Sedang/pernah mengikuti kursus"
+
+// Literacy
+label variable R607        "Apakah dapat membaca dan menulis huruf latin/alfabet"
+label variable R608        "Apakah dapat membaca dan menulis huruf arab/hijaiyah"
+label variable R609        "Apakah dapat membaca dan menulis huruf lainnya"
+
+// Current education
+label variable R610        "Apakah bersekolah"
+label variable R611        "Apakah bersekolah di sekolah negeri atau swasta"
+label variable R612        "Apa jenjang pendidikan tertinggi yang Sedang/pernah diikuti"
+label variable R613        "Apa tingkat/kelas tertinggi yang Sedang/pernah diduduki"
+label variable R614        "Apa ijazah/STTB tertinggi yang dimiliki"
+
+// Education assistance
+label variable R615        "Apakah memiliki KIP"
+label variable R616        "Apakah memperoleh PIP"
+label variable R617        "Berapa jumlah uang PIP yang diterima"
+label variable R618        "Untuk penerimaan berapa semester"
+
+// Previous year education
+label variable R619        "Apakah bersekolah pada tahun ajaran sebelumnya"
+label variable R620        "Apa jenjang pendidikan yang diikuti waktu itu"
+label variable R621        "Apa tingkat/kelas yang diduduki waktu itu"
+
+*------------------------------------------------------------------------------
+* FINANCIAL SERVICES
+*------------------------------------------------------------------------------
+label variable R701        "Apakah memiliki rekening tabungan"
+label variable R702        "Apakah menggunakan produk/layanan jasa keuangan"
+
+*------------------------------------------------------------------------------
+* EMPLOYMENT AND ACTIVITIES
+*------------------------------------------------------------------------------
+// Main activities
+label variable R703_A      "Bekerja"
+label variable R703_B      "Sekolah"
+label variable R703_C      "Mengurus ruta"
+label variable R703_D      "Lainnya selain kegiatan pribadi"
+label variable R703_X      "Tidak melakukan kegiatan"
+label variable R704        "Kegiatan apakah yang menggunakan waktu terbanyak"
+
+// Employment details
+label variable R705        "Apakah mempunyai pekerjaan, tetapi sementara tidak bekerja"
+label variable R706        "Apa lapangan pekerjaan utama"
+label variable R707        "Apa status dalam pekerjaan utama"
+label variable R708        "Berapa jumlah jam kerja dari pekerjaan utama"
+label variable R709        "Berapa jumlah jam kerja dari seluruh pekerjaan"
+
+*------------------------------------------------------------------------------
+* ICT AND DIGITAL ACCESS
+*------------------------------------------------------------------------------
+// Mobile phone usage
+label variable R801        "Apakah menggunakan telepon seluler"
+label variable R802        "Apakah memiliki/menguasai telepon seluler"
+
+// Computer usage
+label variable R807_A      "Menggunakan PC/desktop"
+label variable R807_B      "Menggunakan laptop/notebook"
+label variable R807_C      "Menggunakan tablet"
+label variable R807_X      "Tidak menggunakan komputer"
+
+// Internet usage
+label variable R808        "Apakah pernah menggunakan internet"
+
+// Internet devices
+label variable R809_A      "Menggunakan internet dengan PC/desktop"
+label variable R809_B      "Menggunakan internet dengan laptop/notebook"
+label variable R809_C      "Menggunakan internet dengan tablet"
+label variable R809_D      "Menggunakan internet dengan HP/ponsel"
+label variable R809_E      "Menggunakan internet dengan media lainnya"
+
+// Internet access locations
+label variable R810_A      "Menggunakan internet di rumah sendiri"
+label variable R810_B      "Menggunakan internet di bukan rumah sendiri"
+label variable R810_C      "Menggunakan internet di tempat bekerja/kantor"
+label variable R810_D      "Menggunakan internet di gedung sekolah/kampus"
+label variable R810_E      "Menggunakan internet di tempat umum"
+label variable R810_F      "Menggunakan internet dalam kondisi bergerak"
+
+// Internet usage purposes
+label variable R811_A      "Menggunakan internet untuk mendapat informasi/berita"
+label variable R811_B      "Menggunakan internet untuk mendapat informasi mengenai barang/jasa"
+label variable R811_C      "Menggunakan internet untuk mengirim/menerima e-mail"
+label variable R811_D      "Menggunakan internet untuk media sosial/jejaring sosial"
+label variable R811_E      "Menggunakan internet untuk pembelian barang/jasa"
+label variable R811_F      "Menggunakan internet untuk penjualan barang/jasa"
+label variable R811_G      "Menggunakan internet untuk fasilitas finansial"
+label variable R811_H      "Menggunakan internet untuk pembelajaran online"
+label variable R811_I      "Menggunakan internet untuk work from home"
+label variable R811_J      "Menggunakan internet untuk hiburan"
+label variable R811_K      "Menggunakan internet untuk pembuatan konten digital"
+label variable R811_L      "Menggunakan internet untuk lainnya"
+label variable R812        "Berapa kali menggunakan internet"
+
+*------------------------------------------------------------------------------
+* TRAVEL AND SECURITY
+*------------------------------------------------------------------------------
+// Travel
+label variable R901        "Apakah pernah bepergian"
+label variable R902        "Berapa kali bepergian selama 1 januari-30 juni 2023"
+label variable R903        "Berapa kali bepergian selama 1 juli-31 Desember 2023"
+label variable R904        "Apa maksud utama bepergian"
+
+// Crime victimization
+label variable R905        "Apakah pernah menjadi korban kejahatan"
+label variable R906        "Jumlah kejadian pencurian"
+label variable R907        "Jumlah kejadian pencurian yang dilaporkan"
+label variable R908        "Jumlah kejadian penganiayaan"
+label variable R909        "Jumlah kejadian penganiayaan yang dilaporkan"
+label variable R910        "Jumlah kejadian pencurian dengan kekerasan"
+label variable R911        "Jumlah kejadian pencurian dengan kekerasan yang dilaporkan"
+label variable R912        "Jumlah kejadian pelecehan seksual"
+label variable R913        "Jumlah kejadian pelecehan seksual yang dilaporkan"
+label variable R914        "Jumlah kejadian kejahatan lainnya"
+label variable R915        "Jumlah kejadian kejahatan lainnya yang dilaporkan"
+label variable R916        "Apakah mendapatkan bantuan hukum"
+
+*------------------------------------------------------------------------------
+* DISABILITY AND FUNCTIONAL LIMITATIONS
+*------------------------------------------------------------------------------
+label variable R1001       "Kode batasan umur"
+label variable R1010       "Apakah menerima bansos atensi"
+
+*------------------------------------------------------------------------------
+* HEALTH AND HEALTHCARE
+*------------------------------------------------------------------------------
+// Health insurance
+label variable R1101_A     "Memiliki BPJS PBI"
+label variable R1101_B     "Memiliki BPJS non-PBI"
+label variable R1101_C     "Memiliki jamkesda"
+label variable R1101_D     "Memiliki asuransi swasta"
+label variable R1101_E     "Memiliki jamkes perusahaan/kantor"
+label variable R1101_X     "Tidak memiliki jamkes"
+
+// Health status and self-care
+label variable R1102       "Apakah mempunyai keluhan kesehatan"
+label variable R1103       "Apakah terganggu kegiatan sehari-hari"
+label variable R1104       "Apakah pernah mengobati sendiri"
+
+// Outpatient care
+label variable R1105       "Apakah pernah rawat jalan"
+label variable R1106       "Apa alasan utama tidak rawat jalan"
+
+// Outpatient care facilities
+label variable R1107_A     "Rawat jalan di RS pemerintah"
+label variable R1107_B     "Rawat jalan di RS swasta"
+label variable R1107_C     "Rawat jalan di praktik dokter/bidan"
+label variable R1107_D     "Rawat jalan di klinik/praktik dokter bersama"
+label variable R1107_E     "Rawat jalan di puskesmas/pustu"
+label variable R1107_F     "Rawat jalan di UKBM"
+label variable R1107_G     "Rawat jalan di praktik pengobatan tradisional"
+label variable R1107_H     "Rawat jalan di tempat lainnya"
+label variable R1108       "Berapa kali rawat jalan"
+
+// Outpatient insurance usage
+label variable R1109_A     "Rawat jalan menggunakan BPJS PBI"
+label variable R1109_B     "Rawat jalan menggunakan BPJS non-PBI"
+label variable R1109_C     "Rawat jalan menggunakan jamkesda"
+label variable R1109_D     "Rawat jalan menggunakan asuransi swasta"
+label variable R1109_E     "Rawat jalan menggunakan jaminan kesehatan perusahaan/kantor"
+label variable R1109_X     "Rawat jalan tidak menggunakan jaminan kesehatan"
+
+// Reasons for not using health insurance - outpatient
+label variable R1110_A     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Tidak tahu cara memanfaatkan jaminan kesehatan"
+label variable R1110_B     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Prosedur/persyaratan sulit dipenuhi"
+label variable R1110_C     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Kartu JKN tidak aktif"
+label variable R1110_D     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Tidak ada faskes yang mudah dijangkau dari rumah"
+label variable R1110_E     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Tidak ada petugas pemberi pelayanan jaminan kesehatan"
+label variable R1110_F     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Tidak ada biaya (transportasi, dll)"
+label variable R1110_G     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Waktu tunggu pelayanan lama/antre panjang"
+label variable R1110_H     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Menggunakan asuransi selain JKN/jamkesda"
+label variable R1110_I     "Alasan tidak menggunakan jaminan kesehatan untuk rawat jalan: Alasan lainnya"
+
+// Inpatient care
+label variable R1201       "Apakah pernah rawat inap"
+
+// Inpatient care facilities
+label variable R1202_A     "Rawat inap di RS pemerintah"
+label variable R1202_B     "Rawat inap di RS swasta"
+label variable R1202_C     "Rawat inap di bidan"
+label variable R1202_D     "Rawat inap di klinik/praktik dokter bersama"
+label variable R1202_E     "Rawat inap di puskesmas"
+label variable R1202_F     "Rawat inap di praktik pengobatan tradisional"
+label variable R1202_G     "Rawat inap di tempat lainnya"
+label variable R1203       "Berapa hari rawat inap"
+
+// Inpatient insurance usage
+label variable R1204_A     "Rawat inap menggunakan BPJS PBI"
+label variable R1204_B     "Rawat inap menggunakan BPJS non-PBI"
+label variable R1204_C     "Rawat inap menggunakan jamkesda"
+label variable R1204_D     "Rawat inap menggunakan asuransi swasta"
+label variable R1204_E     "Rawat inap menggunakan jaminan kesehatan perusahaan/kantor"
+label variable R1204_X     "Rawat inap tidak menggunakan jaminan kesehatan"
+
+// Reasons for not using health insurance - inpatient
+label variable R1205_A     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Tidak tahu cara memanfaatkan jaminan kesehatan"
+label variable R1205_B     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Prosedur/persyaratan sulit dipenuhi"
+label variable R1205_C     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Kartu JKN tidak aktif"
+label variable R1205_D     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Tidak ada faskes yang mudah dijangkau dari rumah"
+label variable R1205_E     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Tidak ada petugas pemberi pelayanan jaminan kesehatan"
+label variable R1205_F     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Tidak ada biaya (transportasi, akomodasi, dll)"
+label variable R1205_G     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Waktu tunggu pelayanan lama/antre panjang"
+label variable R1205_H     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Menggunakan asuransi selain JKN/jamkesda"
+label variable R1205_I     "Alasan tidak menggunakan jaminan kesehatan untuk rawat inap: Alasan lainnya"
+
+// Smoking behavior
+label variable R1206       "Apakah merokok elektrik"
+label variable R1207       "Apakah merokok tembakau"
+label variable R1208       "Berapa batang rokok tembakau yang dihisap per minggu"
+label variable R1209       "Apakah dulu pernah merokok tembakau"
+
+*------------------------------------------------------------------------------
+* CHILD HEALTH AND NUTRITION (Under 5 years)
+*------------------------------------------------------------------------------
+label variable NUINFOBAYI "Nomor urut pemberi informasi balita"
+label variable R1401      "Umur balita dalam bulan"
+label variable R1402      "Apakah mempunyai buku KIA/KMS?"
+label variable R1403      "Apakah pernah mempunyai buku KIA/KMS?"
+
+// Immunization records (with dates)
+label variable R1404A_TGL "Tanggal diimunisasi Hepatitis B (<24 jam)"
+label variable R1404A_BLN "Bulan diimunisasi Hepatitis B (<24 jam)"
+label variable R1404A_THN "Tahun diimunisasi Hepatitis B (<24 jam)"
+label variable R1404B_TGL "Tanggal diimunisasi BCG"
+label variable R1404B_BLN "Bulan diimunisasi BCG"
+label variable R1404B_THN "Tahun diimunisasi BCG"
+label variable R1404C_TGL "Tanggal diimunisasi Polio tetes 1"
+label variable R1404C_BLN "Bulan diimunisasi Polio tetes 1"
+label variable R1404C_THN "Tahun diimunisasi Polio tetes 1"
+label variable R1404D_TGL "Tanggal diimunisasi DPT-HB-HIB 1"
+label variable R1404D_BLN "Bulan diimunisasi DPT-HB-HIB 1"
+label variable R1404D_THN "Tahun diimunisasi DPT-HB-HIB 1"
+label variable R1404E_TGL "Tanggal diimunisasi Polio tetes 2"
+label variable R1404E_BLN "Bulan diimunisasi Polio tetes 2"
+label variable R1404E_THN "Tahun diimunisasi Polio tetes 2"
+label variable R1404F_TGL "Tanggal diimunisasi DPT-HB-HIB 2"
+label variable R1404F_BLN "Bulan diimunisasi DPT-HB-HIB 2"
+label variable R1404F_THN "Tahun diimunisasi DPT-HB-HIB 2"
+label variable R1404G_TGL "Tanggal diimunisasi Polio tetes 3"
+label variable R1404G_BLN "Bulan diimunisasi Polio tetes 3"
+label variable R1404G_THN "Tahun diimunisasi Polio tetes 3"
+label variable R1404H_TGL "Tanggal diimunisasi DPT-HB-HIB 3"
+label variable R1404H_BLN "Bulan diimunisasi DPT-HB-HIB 3"
+label variable R1404H_THN "Tahun diimunisasi DPT-HB-HIB 3"
+label variable R1404I_TGL "Tanggal diimunisasi Polio tetes 4"
+label variable R1404I_BLN "Bulan diimunisasi Polio tetes 4"
+label variable R1404I_THN "Tahun diimunisasi Polio tetes 4"
+label variable R1404J_TGL "Tanggal diimunisasi Polio suntik (IPV)"
+label variable R1404J_BLN "Bulan diimunisasi Polio suntik (IPV)"
+label variable R1404J_THN "Tahun diimunisasi Polio suntik (IPV)"
+label variable R1404K_TGL "Tanggal diimunisasi Campak-Rubella (MR)"
+label variable R1404K_BLN "Bulan diimunisasi Campak-Rubella (MR)"
+label variable R1404K_THN "Tahun diimunisasi Campak-Rubella (MR)"
+label variable R1404L_TGL "Tanggal diimunisasi DPT-HB-HIB lanjutan"
+label variable R1404L_BLN "Bulan diimunisasi DPT-HB-HIB lanjutan"
+label variable R1404L_THN "Tahun diimunisasi DPT-HB-HIB lanjutan"
+label variable R1404M_TGL "Tanggal diimunisasi Campak-Rubella (MR) lanjutan"
+label variable R1404M_BLN "Bulan diimunisasi Campak-Rubella (MR) lanjutan"
+label variable R1404M_THN "Tahun diimunisasi Campak-Rubella (MR) lanjutan"
+label variable R1404N_TGL "Tanggal diimunisasi MMR"
+label variable R1404N_BLN "Bulan diimunisasi MMR"
+label variable R1404N_THN "Tahun diimunisasi MMR"
+
+// Immunization history
+label variable R1405      "Apakah menerima imunisasi dasar yang tidak tercatat dalam kartu?"
+label variable R1406      "Apakah pernah mendapat imunisasi?"
+label variable R1407      "Apakah pernah mendapat vaksin BCG?"
+label variable R1408      "Apakah pernah mendapat vaksin Polio?"
+label variable R1409      "Kapan vaksin Polio pertama diterima?"
+label variable R1410A     "Sudah berapa kali mendapatkan vaksin Polio tetes?"
+label variable R1410B     "Sudah berapa kali mendapatkan vaksin Polio suntik (IPV)?"
+label variable R1411      "Apakah pernah mendapat vaksin DPT?"
+label variable R1412      "Sudah berapa kali mendapatkan vaksin DPT?"
+label variable R1413      "Apakah pernah mendapat vaksin Hepatitis B?"
+label variable R1414      "Sudah berapa kali mendapatkan vaksin Hepatitis B?"
+label variable R1415      "Kapan vaksin Hepatitis B pertama diterima?"
+label variable R1416I     "Apakah pernah mendapat suntikan Campak?"
+label variable R1416II    "Apakah pernah mendapat suntikan MMR?"
+
+// Feeding practices
+label variable R1417I     "Balita umur 0-23 bulan"
+label variable R1417II    "Balita umur >=24 bulan"
+label variable R1417A     "Apakah pernah diberi ASI?"
+label variable R1417B0    "Lamanya pemberian ASI"
+label variable R1417B1    "Lamanya pemberian ASI tanpa makanan pendamping"
+label variable R1417B2    "Lamanya pemberian ASI dengan makanan pendamping"
+label variable R1418      "Apakah disusui/diberi ASI?"
+label variable R1419A     "Apakah diberi susu selain ASI?"
+label variable R1419AY    "Berapa kali diberi susu selain ASI?"
+label variable R1419B     "Apakah diberi minuman lain?"
+label variable R1419C     "Apakah diberi minuman berpemanis gula?"
+
+// Complementary feeding
+label variable R1420A     "Apakah diberi sereal, akar, dan umbi?"
+label variable R1420B     "Apakah diberi makanan dari kacang-kacangan?"
+label variable R1420C     "Apakah diberi produk turunan susu?"
+label variable R1420D     "Apakah diberi daging, ikan?"
+label variable R1420E     "Apakah diberi telur?"
+label variable R1420F     "Apakah diberi buah dan sayuran sumber vitamin A?"
+label variable R1420G     "Apakah diberi buah atau sayuran lainnya?"
+label variable R1420H     "Apakah diberi makanan ringan yang gurih, gorengan, makanan manis?"
+label variable R1421      "Apakah diberi makanan padat, setengah padat, atau lunak?"
+label variable R1421Y     "Berapa kali diberi makanan padat, setengah padat, atau lunak?"
+
+*------------------------------------------------------------------------------
+* REPRODUCTIVE HEALTH (Women who have been married)
+*------------------------------------------------------------------------------
+label variable NUINFOWPK  "Nomor urut pemberi informasi perempuan pernah kawin"
+label variable R1501A     "Apakah pernah hamil?"
+label variable R1501B     "Umur saat hamil pertama"
+label variable R1502A     "Apakah pernah melahirkan anak lahir hidup?"
+label variable R1502B     "Umur saat melahirkan pertama kali"
+label variable R1503      "Kapan melahirkan anak lahir hidup yang terakhir?"
+label variable R1504A     "Dimana melahirkan anak lahir hidup yang terakhir?"
+label variable R1504B     "Siapa yang menolong proses kelahiran terakhir?"
+label variable R1504C     "Berapa berat anak lahir hidup terakhir ketika dilahirkan?"
+label variable R1505      "Berapa lama proses menempelkan bayi baru lahir di dada ibu?"
+
+// Family planning
+label variable R1601      "Apakah pernah/sedang menggunakan alat KB/cara tradisional?"
+label variable R1602      "Alat KB/cara tradisional yang sedang digunakan"
+label variable R1603      "Jika menggunakan alat KB modern, dimana memperolehnya terakhir kali?"
+
+*------------------------------------------------------------------------------
+* SOCIAL ASSISTANCE FOR SPECIFIC GROUPS
+*------------------------------------------------------------------------------
+label variable R2205A     "Apakah ada art menerima bansos dari program atensi lansia?"
+label variable R2205B     "Nomor urut art penerima bansos dari program atensi lansia"
+label variable R2210AA    "Apakah ada art memiliki usaha mikro atau kecil?"
+label variable R2210AB    "Nomor urut art yang memiliki usaha mikro atau kecil"
+
+*------------------------------------------------------------------------------
+* HOUSEHOLD COMPOSITION SUMMARY
+*------------------------------------------------------------------------------
+label variable R301        "Banyaknya art"
+label variable R302        "Banyaknya art 0-4 tahun"
+label variable R303        "Banyaknya art 5 tahun ke atas"
+label variable R304        "Banyaknya art 10 tahun ke atas"
+label variable R305        "Banyaknya perempuan 10-54 tahun berstatus kawin"
+
+*------------------------------------------------------------------------------
+* SURVEY WEIGHTS
+*------------------------------------------------------------------------------
+label variable FWT         "Penimbang supas"
+
+*==============================================================================
+* VALUE LABELS
+*==============================================================================
+
+*------------------------------------------------------------------------------
+* PROVINCE CODES (R101)
+*------------------------------------------------------------------------------
+label define R101_lbl ///
+    11 "Aceh" ///
+    12 "Sumatera Utara" ///
+    13 "Sumatera Barat" ///
+    14 "Riau" ///
+    15 "Jambi" ///
+    16 "Sumatera Selatan" ///
+    17 "Bengkulu" ///
+    18 "Lampung" ///
+    19 "Kepulauan Bangka Belitung" ///
+    21 "Kepulauan Riau" ///
+    31 "DKI Jakarta" ///
+    32 "Jawa Barat" ///
+    33 "Jawa Tengah" ///
+    34 "DI Yogyakarta" ///
+    35 "Jawa Timur" ///
+    36 "Banten" ///
+    51 "Bali" ///
+    52 "Nusa Tenggara Barat" ///
+    53 "Nusa Tenggara Timur" ///
+    61 "Kalimantan Barat" ///
+    62 "Kalimantan Tengah" ///
+    63 "Kalimantan Selatan" ///
+    64 "Kalimantan Timur" ///
+    65 "Kalimantan Utara" ///
+    71 "Sulawesi Utara" ///
+    72 "Sulawesi Tengah" ///
+    73 "Sulawesi Selatan" ///
+    74 "Sulawesi Tenggara" ///
+    75 "Gorontalo" ///
+    76 "Sulawesi Barat" ///
+    81 "Maluku" ///
+    82 "Maluku Utara" ///
+    91 "Papua Barat" ///
+    92 "Papua Barat Daya" ///
+    94 "Papua" ///
+    95 "Papua Selatan" ///
+    96 "Papua Tengah" ///
+    97 "Papua Pegunungan"
+label values R101 R101_lbl
+
+*------------------------------------------------------------------------------
+* AREA TYPE (R105)
+*------------------------------------------------------------------------------
+label define R105_lbl ///
+    1 "Perkotaan" ///
+    2 "Perdesaan"
+label values R105 R105_lbl
+
+*------------------------------------------------------------------------------
+* RELATIONSHIP TO HOUSEHOLD HEAD (R403)
+*------------------------------------------------------------------------------
+label define R403_lbl ///
+    1 "Kepala rumah tangga" ///
+    2 "Istri/suami" ///
+    3 "Anak kandung/tiri" ///
+    4 "Anak angkat" ///
+    5 "Menantu" ///
+    6 "Cucu" ///
+    7 "Orang tua/mertua" ///
+    8 "Pembantu/sopir" ///
+    9 "Lainnya"
+label values R403 R403_lbl
+
+*------------------------------------------------------------------------------
+* MARITAL STATUS (R404)
+*------------------------------------------------------------------------------
+label define R404_lbl ///
+    1 "Belum kawin" ///
+    2 "Kawin" ///
+    3 "Cerai hidup" ///
+    4 "Cerai mati"
+label values R404 R404_lbl
+
+*------------------------------------------------------------------------------
+* GENDER (R405)
+*------------------------------------------------------------------------------
+label define R405_lbl ///
+    1 "Laki-laki" ///
+    2 "Perempuan"
+label values R405 R405_lbl
+
+*------------------------------------------------------------------------------
+* YES/NO RESPONSES (Simple)
+*------------------------------------------------------------------------------
+label define yesno_lbl ///
+    1 "Ya" ///
+    5 "Tidak"
+
+// Apply to spouse residence and other simple yes/no questions
+label values R408 yesno_lbl
+label values R504 yesno_lbl
+label values R607 yesno_lbl
+label values R608 yesno_lbl
+label values R609 yesno_lbl
+label values R701 yesno_lbl
+label values R702 yesno_lbl
+label values R705 yesno_lbl
+label values R801 yesno_lbl
+label values R802 yesno_lbl
+label values R808 yesno_lbl
+label values R901 yesno_lbl
+label values R905 yesno_lbl
+label values R916 yesno_lbl
+label values R1010 yesno_lbl
+label values R1102 yesno_lbl
+label values R1103 yesno_lbl
+label values R1104 yesno_lbl
+label values R1105 yesno_lbl
+label values R1201 yesno_lbl
+
+*------------------------------------------------------------------------------
+* MARRIAGE CERTIFICATE/BIRTH CERTIFICATE (R501, R508)
+*------------------------------------------------------------------------------
+label define document_lbl ///
+    1 "Ya, dapat ditunjukkan" ///
+    2 "Ya, tidak dapat ditunjukkan" ///
+    5 "Tidak memiliki" ///
+    8 "Tidak tahu"
+label values R501 document_lbl
+label values R508 document_lbl
+
+*------------------------------------------------------------------------------
+* GENDER FROM NIK (R506)
+*------------------------------------------------------------------------------
+label define R506_lbl ///
+    1 "Laki-laki" ///
+    2 "Perempuan" ///
+    5 "Tidak dapat ditentukan" ///
+    9 "Tidak ingat/tidak tahu"
+label values R506 R506_lbl
+
+*------------------------------------------------------------------------------
+* NIK DATA SOURCE (R507)
+*------------------------------------------------------------------------------
+label define R507_lbl ///
+    1 "KK" ///
+    2 "KTP" ///
+    3 "Lainnya" ///
+    9 "Tidak ingat/tidak tahu"
+label values R507 R507_lbl
+
+*------------------------------------------------------------------------------
+* NIK-GENDER CONSISTENCY (R509)
+*------------------------------------------------------------------------------
+label define R509_lbl ///
+    1 "sama" ///
+    2 "berbeda" ///
+    3 "Tidak relevan"
+label values R509 R509_lbl
+
+*------------------------------------------------------------------------------
+* PRE-SCHOOL PARTICIPATION (R605)
+*------------------------------------------------------------------------------
+label define R605_lbl ///
+    1 "Masih/pernah mengikuti prasekolah tahun ajaran ini" ///
+    2 "Pernah mengikuti prasekolah tahun ajaran ini" ///
+    3 "Pernah mengikuti prasekolah tahun ajaran sebelumnya" ///
+    4 "Tidak/belum pernah mengikuti pendidikan prasekolah"
+label values R605 R605_lbl
+
+*------------------------------------------------------------------------------
+* PRE-SCHOOL TYPE (R606)
+*------------------------------------------------------------------------------
+label define R606_lbl ///
+    1 "Taman Kanak-kanak" ///
+    2 "Bustanul Athfal" ///
+    3 "Raudatul Athfal" ///
+    4 "Satuan PAUD sejenis" ///
+    5 "Kelompok bermain" ///
+    6 "Taman Penitipan Anak"
+label values R606 R606_lbl
+
+*------------------------------------------------------------------------------
+* SCHOOLING STATUS (R610, R619)
+*------------------------------------------------------------------------------
+label define schooling_lbl ///
+    1 "Tidak/belum pernah bersekolah" ///
+    2 "Masih bersekolah" ///
+    3 "Tidak bersekolah lagi"
+label values R610 schooling_lbl
+label values R619 schooling_lbl
+
+*------------------------------------------------------------------------------
+* SCHOOL TYPE (R611)
+*------------------------------------------------------------------------------
+label define R611_lbl ///
+    1 "Negeri" ///
+    2 "Swasta"
+label values R611 R611_lbl
+
+*------------------------------------------------------------------------------
+* EDUCATION LEVEL (R612, R614, R620)
+*------------------------------------------------------------------------------
+label define education_lbl ///
+    1 "Paket A" ///
+    2 "SDLB" ///
+    3 "SD" ///
+    4 "MI" ///
+    5 "SPM/PDF Ula" ///
+    6 "Paket B" ///
+    7 "SMPLB" ///
+    8 "SMP" ///
+    9 "MTs" ///
+    10 "SPM/PDF Wustha" ///
+    11 "Paket C" ///
+    12 "SMLB" ///
+    13 "SMA" ///
+    14 "MA" ///
+    15 "SMK" ///
+    16 "MAK" ///
+    17 "SMP/PDF Ulya" ///
+    18 "D1/D2" ///
+    19 "D3" ///
+    20 "D4" ///
+    21 "S1" ///
+    22 "Profesi" ///
+    23 "S2" ///
+    24 "S3"
+label values R612 education_lbl
+label values R620 education_lbl
+
+// Education certificate with additional category
+label define R614_lbl ///
+    1 "Paket A" ///
+    2 "SDLB" ///
+    3 "SD" ///
+    4 "MI" ///
+    5 "SPM/PDF Ula" ///
+    6 "Paket B" ///
+    7 "SMPLB" ///
+    8 "SMP" ///
+    9 "MTs" ///
+    10 "SPM/PDF Wustha" ///
+    11 "Paket C" ///
+    12 "SMLB" ///
+    13 "SMA" ///
+    14 "MA" ///
+    15 "SMK" ///
+    16 "MAK" ///
+    17 "SMP/PDF Ulya" ///
+    18 "D1/D2" ///
+    19 "D3" ///
+    20 "D4" ///
+    21 "S1" ///
+    22 "Profesi" ///
+    23 "S2" ///
+    24 "S3" ///
+    25 "Tidak Punya Ijazah SD"
+label values R614 R614_lbl
+
+*------------------------------------------------------------------------------
+* GRADE/CLASS LEVEL (R613, R621)
+*------------------------------------------------------------------------------
+label define grade_lbl ///
+    1 "1" ///
+    2 "2" ///
+    3 "3" ///
+    4 "4" ///
+    5 "5" ///
+    6 "6" ///
+    7 "7" ///
+    8 "Tamat"
+label values R613 grade_lbl
+label values R621 grade_lbl
+
+*------------------------------------------------------------------------------
+* EDUCATION ASSISTANCE (R615, R616)
+*------------------------------------------------------------------------------
+label define R615_lbl ///
+    1 "Ya, dapat ditunjukkan" ///
+    2 "Ya, tidak dapat ditunjukkan" ///
+    5 "Tidak"
+label values R615 R615_lbl
+
+label values R616 yesno_lbl
+
+*------------------------------------------------------------------------------
+* MAIN ACTIVITY (R704)
+*------------------------------------------------------------------------------
+label define R704_lbl ///
+    1 "Bekerja" ///
+    2 "Sekolah" ///
+    3 "Mengurus rumah tangga" ///
+    4 "Lainnya selain kegiatan pribadi"
+label values R704 R704_lbl
+
+*------------------------------------------------------------------------------
+* INDUSTRY (R706)
+*------------------------------------------------------------------------------
+label define R706_lbl ///
+    1 "Pertanian tanaman padi dan palawija" ///
+    2 "Hortikultura" ///
+    3 "Perkebunan" ///
+    4 "Perikanan" ///
+    5 "Peternakan" ///
+    6 "Kehutanan dan pertanian lainnya" ///
+    7 "Pertambangan dan penggalian" ///
+    8 "Industri pengolahan" ///
+    9 "Pengadaan listrik, gas, uap/air panas, dan udara dingin" ///
+    10 "Pengelolaan air, air limbah, daur ulang sampah, dan aktivita" ///
+    11 "Konstruksi" ///
+    12 "Perdagangan besar dan eceran, reparasi dan perawatan mobil d" ///
+    13 "Pengangkutan dan pergudangan" ///
+    14 "Penyediaan akomodasi dan makan minum" ///
+    15 "Informasi dan komunikasi" ///
+    16 "Aktivitas keuangan dan asuransi" ///
+    17 "Real estate" ///
+    18 "Aktivitas profesional, ilmiah, dan teknis" ///
+    19 "Aktivitas penyewaan dan sewa guna tanpa hak opsi, ketenagake" ///
+    20 "Administrasi pemerintahan, pertahanan, dan jaminan sosial wa" ///
+    21 "Pendidikan" ///
+    22 "Aktivitas kesehatan manusia dan sosial" ///
+    23 "Kesenian, liburan dan rekreasi" ///
+    24 "Aktivitas jasa lainnya" ///
+    25 "Aktivitas rumah tangga sebagai pemberi kerja" ///
+    26 "Aktivitas badan internasional dan ekstra internasional lain"
+label values R706 R706_lbl
+
+*------------------------------------------------------------------------------
+* EMPLOYMENT STATUS (R707)
+*------------------------------------------------------------------------------
+label define R707_lbl ///
+    1 "Berusaha sendiri" ///
+    2 "Berusaha dibantu buruh tdk tetap/tdk dibayar" ///
+    3 "Berusaha dibantu buruh tetap/buruh dibayar" ///
+    4 "Buruh/karyawan/pegawai" ///
+    5 "Pekerja bebas" ///
+    6 "Pekerja keluarga atau tidak dibayar"
+label values R707 R707_lbl
+
+*------------------------------------------------------------------------------
+* TRAVEL PURPOSE (R904)
+*------------------------------------------------------------------------------
+label define R904_lbl ///
+    1 "Berlibur/rekreasi" ///
+    2 "Profesi/bisnis" ///
+    3 "Misi/pertemuan/kongres/seminar" ///
+    4 "Training/pendidikan/pelatihan" ///
+    5 "Kesehatan/berobat" ///
+    6 "Berziarah/keagamaan" ///
+    7 "Mengunjungi teman/keluarga" ///
+    8 "Mudik/pulang kampung" ///
+    9 "Olahraga/kesenian" ///
+    10 "Belanja/shopping" ///
+    11 "Lainnya"
+label values R904 R904_lbl
+
+*------------------------------------------------------------------------------
+* CRIME FREQUENCY (R906-R915)
+*------------------------------------------------------------------------------
+label define crime_freq_lbl ///
+    0 "0" ///
+    1 "1" ///
+    2 "2" ///
+    3 "3" ///
+    4 "4" ///
+    5 "5" ///
+    6 "6" ///
+    7 "7+"
+
+label values R906 crime_freq_lbl
+label values R907 crime_freq_lbl
+label values R908 crime_freq_lbl
+label values R909 crime_freq_lbl
+label values R910 crime_freq_lbl
+label values R911 crime_freq_lbl
+label values R912 crime_freq_lbl
+label values R913 crime_freq_lbl
+label values R914 crime_freq_lbl
+label values R915 crime_freq_lbl
+
+*------------------------------------------------------------------------------
+* AGE LIMIT CODE (R1001)
+*------------------------------------------------------------------------------
+label define R1001_lbl ///
+    0 "Berumur kurang dari 2 tahun" ///
+    1 "Berumur 2 tahun ke atas"
+label values R1001 R1001_lbl
+
+*------------------------------------------------------------------------------
+* OUTPATIENT CARE REASON (R1106)
+*------------------------------------------------------------------------------
+label define R1106_lbl ///
+    1 "Tidak punya biaya berobat" ///
+    2 "Tidak ada biaya transpor" ///
+    3 "Tidak ada sarana transportasi" ///
+    4 "Waktu tunggu pelayanan lama" ///
+    5 "Mengobati sendiri" ///
+    6 "Tidak ada yang mendampingi" ///
+    7 "Merasa tidak perlu" ///
+    8 "Lainnya"
+label values R1106 R1106_lbl
+
+*------------------------------------------------------------------------------
+* SMOKING STATUS (R1206, R1207, R1209)
+*------------------------------------------------------------------------------
+label define smoking_lbl ///
+    1 "Ya, setiap hari" ///
+    2 "Ya, tidak setiap hari" ///
+    5 "Tidak" ///
+    8 "Tidak tahu"
+
+label values R1206 smoking_lbl
+label values R1207 smoking_lbl
+label values R1209 smoking_lbl
+
+*------------------------------------------------------------------------------
+* YES/NO/DON'T KNOW RESPONSES (Health and Child modules)
+*------------------------------------------------------------------------------
+label define yesno_dk_lbl ///
+    1 "Ya" ///
+    5 "Tidak" ///
+    8 "Tidak tahu"
+
+// Apply to child health and immunization questions
+label values R1402 document_lbl  // Uses document label for consistency
+label values R1403 yesno_lbl
+label values R1405 yesno_dk_lbl
+label values R1406 yesno_dk_lbl
+label values R1407 yesno_dk_lbl
+label values R1408 yesno_dk_lbl
+label values R1411 yesno_dk_lbl
+label values R1413 yesno_dk_lbl
+label values R1416I yesno_dk_lbl
+label values R1416II yesno_dk_lbl
+label values R1417A yesno_dk_lbl
+label values R1418 yesno_dk_lbl
+label values R1419A yesno_dk_lbl
+label values R1419B yesno_dk_lbl
+label values R1419C yesno_dk_lbl
+label values R1420A yesno_dk_lbl
+label values R1420B yesno_dk_lbl
+label values R1420C yesno_dk_lbl
+label values R1420D yesno_dk_lbl
+label values R1420E yesno_dk_lbl
+label values R1420F yesno_dk_lbl
+label values R1420G yesno_dk_lbl
+label values R1420H yesno_dk_lbl
+label values R1421 yesno_dk_lbl
+
+*------------------------------------------------------------------------------
+* VACCINE TIMING (R1409, R1415)
+*------------------------------------------------------------------------------
+label define R1409_lbl ///
+    1 "Sebulan pertama" ///
+    2 "Setelah sebulan pertama"
+label values R1409 R1409_lbl
+
+label define R1415_lbl ///
+    1 "seminggu pertama" ///
+    2 "Setelah seminggu pertama"
+label values R1415 R1415_lbl
+
+*------------------------------------------------------------------------------
+* REPRODUCTIVE HEALTH - PREGNANCY AND BIRTH
+*------------------------------------------------------------------------------
+label values R1501A yesno_lbl
+label values R1502A yesno_lbl
+
+label define R1503_lbl ///
+    1 "2 tahun yang lalu atau kurang" ///
+    2 "Lebih dari 2 tahun yang lalu"
+label values R1503 R1503_lbl
+
+*------------------------------------------------------------------------------
+* DELIVERY PLACE (R1504A)
+*------------------------------------------------------------------------------
+label define R1504A_lbl ///
+    1 "RS Pemerintah/Swasta" ///
+    2 "Rumah bersalin/klinik" ///
+    3 "Puskesmas" ///
+    4 "Pustu" ///
+    5 "Praktek nakes" ///
+    6 "Polindes/Poskesdes" ///
+    7 "Rumah" ///
+    8 "Lainnya"
+label values R1504A R1504A_lbl
+
+*------------------------------------------------------------------------------
+* BIRTH ATTENDANT (R1504B)
+*------------------------------------------------------------------------------
+label define R1504B_lbl ///
+    1 "Dokter kandungan" ///
+    2 "Dokter umum" ///
+    3 "Bidan" ///
+    4 "Perawat" ///
+    5 "Tenaga kesehatan lainnya" ///
+    6 "Dukun beranak/paraji" ///
+    7 "Lainnya" ///
+    8 "Tidak ada"
+label values R1504B R1504B_lbl
+
+*------------------------------------------------------------------------------
+* BIRTH WEIGHT (R1504C)
+*------------------------------------------------------------------------------
+label define R1504C_lbl ///
+    1 "< 2,5 kg" ///
+    2 ">= 2,5 kg" ///
+    5 "Tidak ditimbang" ///
+    8 "Tidak tahu"
+label values R1504C R1504C_lbl
+
+*------------------------------------------------------------------------------
+* SKIN-TO-SKIN CONTACT (R1505)
+*------------------------------------------------------------------------------
+label define R1505_lbl ///
+    1 "<1 jam setelah lahir" ///
+    2 "1-23 jam setelah lahir" ///
+    3 ">=24 jam setelah lahir" ///
+    5 "Tidak pernah" ///
+    8 "Tidak tahu"
+label values R1505 R1505_lbl
+
+*------------------------------------------------------------------------------
+* FAMILY PLANNING (R1601, R1602)
+*------------------------------------------------------------------------------
+label define R1601_lbl ///
+    1 "Ya, pernah" ///
+    2 "Ya, sedang" ///
+    5 "Tidak"
+label values R1601 R1601_lbl
+
+label define R1602_lbl ///
+    1 "Sterilisasi wanita/tubektomi/MOW" ///
+    2 "Sterilisasi pria/vasektomi/MOP" ///
+    3 "IUD/AKDR/spiral" ///
+    4 "Suntikan" ///
+    5 "Susuk KB/implan" ///
+    6 "Pil" ///
+    7 "Kondom pria/karet KB" ///
+    8 "Intravag/kondom wanita/diafragma" ///
+    9 "Metode menyusui alami" ///
+    10 "Pantang berkala/kalender" ///
+    11 "Lainnya"
+label values R1602 R1602_lbl
+
+*------------------------------------------------------------------------------
+* FAMILY PLANNING FACILITY (R1603)
+*------------------------------------------------------------------------------
+label define R1603_lbl ///
+    1 "Rumah sakit" ///
+    2 "Puskesmas/Pustu/Klinik" ///
+    3 "TKBK/TMK/MUYAN" ///
+    4 "Polindes/Poskesdes" ///
+    5 "Posyandu/Pos KB/PPKBD" ///
+    6 "Rumah bersalin" ///
+    7 "Praktek dokter umum/kandungan" ///
+    8 "Praktek bidan/bidan di desa/perawat" ///
+    9 "Apotek/toko obat" ///
+    10 "Lainnya"
+label values R1603 R1603_lbl
+
+*------------------------------------------------------------------------------
+* SOCIAL ASSISTANCE INDICATORS
+*------------------------------------------------------------------------------
+label values R2205A yesno_lbl
+label values R2210AA yesno_lbl
+
+*------------------------------------------------------------------------------
+* CREATE DISTRICT CODE VARIABLE
+*------------------------------------------------------------------------------
+// Create new variable by removing last digit from STRATA
+generate kode_kabkota = floor(STRATA/10)
+label variable kode_kabkota "Kode Provinsi-Kabupaten/Kota"
+
+*------------------------------------------------------------------------------
+* CREATE DISTRICT/CITY VALUE LABELS
+*------------------------------------------------------------------------------
+label define kode_kabkota_lbl ///
+    1101 "SIMEULUE" ///
+    1102 "ACEH SINGKIL" ///
+    1103 "ACEH SELATAN" ///
+    1104 "ACEH TENGGARA" ///
+    1105 "ACEH TIMUR" ///
+    1106 "ACEH TENGAH" ///
+    1107 "ACEH BARAT" ///
+    1108 "ACEH BESAR" ///
+    1109 "PIDIE" ///
+    1110 "BIREUEN" ///
+    1111 "ACEH UTARA" ///
+    1112 "ACEH BARAT DAYA" ///
+    1113 "GAYO LUES" ///
+    1114 "ACEH TAMIANG" ///
+    1115 "NAGAN RAYA" ///
+    1116 "ACEH JAYA" ///
+    1117 "BENER MERIAH" ///
+    1118 "PIDIE JAYA" ///
+    1171 "BANDA ACEH" ///
+    1172 "SABANG" ///
+    1173 "LANGSA" ///
+    1174 "LHOKSEUMAWE" ///
+    1175 "SUBULUSSALAM" ///
+    1201 "NIAS" ///
+    1202 "MANDAILING NATAL" ///
+    1203 "TAPANULI SELATAN" ///
+    1204 "TAPANULI TENGAH" ///
+    1205 "TAPANULI UTARA" ///
+    1206 "TOBA" ///
+    1207 "LABUHANBATU" ///
+    1208 "ASAHAN" ///
+    1209 "SIMALUNGUN" ///
+    1210 "DAIRI" ///
+    1211 "KARO" ///
+    1212 "DELI SERDANG" ///
+    1213 "LANGKAT" ///
+    1214 "NIAS SELATAN" ///
+    1215 "HUMBANG HASUNDUTAN" ///
+    1216 "PAKPAK BHARAT" ///
+    1217 "SAMOSIR" ///
+    1218 "SERDANG BEDAGAI" ///
+    1219 "BATU BARA" ///
+    1220 "PADANG LAWAS UTARA" ///
+    1221 "PADANG LAWAS" ///
+    1222 "LABUHANBATU SELATAN" ///
+    1223 "LABUHANBATU UTARA" ///
+    1224 "NIAS UTARA" ///
+    1225 "NIAS BARAT" ///
+    1271 "SIBOLGA" ///
+    1272 "TANJUNGBALAI" ///
+    1273 "PEMATANG SIANTAR" ///
+    1274 "TEBING TINGGI" ///
+    1275 "MEDAN" ///
+    1276 "BINJAI" ///
+    1277 "PADANGSIDIMPUAN" ///
+    1278 "GUNUNGSITOLI" ///
+    1301 "KEPULAUAN MENTAWAI" ///
+    1302 "PESISIR SELATAN" ///
+    1303 "SOLOK" ///
+    1304 "SIJUNJUNG" ///
+    1305 "TANAH DATAR" ///
+    1306 "PADANG PARIAMAN" ///
+    1307 "AGAM" ///
+    1308 "LIMA PULUH KOTA" ///
+    1309 "PASAMAN" ///
+    1310 "SOLOK SELATAN" ///
+    1311 "DHARMASRAYA" ///
+    1312 "PASAMAN BARAT" ///
+    1371 "PADANG" ///
+    1372 "SOLOK" ///
+    1373 "SAWAHLUNTO" ///
+    1374 "PADANG PANJANG" ///
+    1375 "BUKITTINGGI" ///
+    1376 "PAYAKUMBUH" ///
+    1377 "PARIAMAN" ///
+    1401 "KUANTAN SINGINGI" ///
+    1402 "INDRAGIRI HULU" ///
+    1403 "INDRAGIRI HILIR" ///
+    1404 "PELALAWAN" ///
+    1405 "S I A K" ///
+    1406 "KAMPAR" ///
+    1407 "ROKAN HULU" ///
+    1408 "BENGKALIS" ///
+    1409 "ROKAN HILIR" ///
+    1410 "KEPULAUAN MERANTI" ///
+    1471 "PEKANBARU" ///
+    1473 "D U M A I" ///
+    1501 "KERINCI" ///
+    1502 "MERANGIN" ///
+    1503 "SAROLANGUN" ///
+    1504 "BATANG HARI" ///
+    1505 "MUARO JAMBI" ///
+    1506 "TANJUNG JABUNG TIMUR" ///
+    1507 "TANJUNG JABUNG BARAT" ///
+    1508 "TEBO" ///
+    1509 "BUNGO" ///
+    1571 "JAMBI" ///
+    1572 "SUNGAI PENUH" ///
+    1601 "OGAN KOMERING ULU" ///
+    1602 "OGAN KOMERING ILIR" ///
+    1603 "MUARA ENIM" ///
+    1604 "LAHAT" ///
+    1605 "MUSI RAWAS" ///
+    1606 "MUSI BANYUASIN" ///
+    1607 "BANYU ASIN" ///
+    1608 "OGAN KOMERING ULU SELATAN" ///
+    1609 "OGAN KOMERING ULU TIMUR" ///
+    1610 "OGAN ILIR" ///
+    1611 "EMPAT LAWANG" ///
+    1612 "PENUKAL ABAB LEMATANG ILIR" ///
+    1613 "MUSI RAWAS UTARA" ///
+    1671 "PALEMBANG" ///
+    1672 "PRABUMULIH" ///
+    1673 "PAGAR ALAM" ///
+    1674 "LUBUKLINGGAU" ///
+    1701 "BENGKULU SELATAN" ///
+    1702 "REJANG LEBONG" ///
+    1703 "BENGKULU UTARA" ///
+    1704 "KAUR" ///
+    1705 "SELUMA" ///
+    1706 "MUKOMUKO" ///
+    1707 "LEBONG" ///
+    1708 "KEPAHIANG" ///
+    1709 "BENGKULU TENGAH" ///
+    1771 "BENGKULU" ///
+    1801 "LAMPUNG BARAT" ///
+    1802 "TANGGAMUS" ///
+    1803 "LAMPUNG SELATAN" ///
+    1804 "LAMPUNG TIMUR" ///
+    1805 "LAMPUNG TENGAH" ///
+    1806 "LAMPUNG UTARA" ///
+    1807 "WAY KANAN" ///
+    1808 "TULANGBAWANG" ///
+    1809 "PESAWARAN" ///
+    1810 "PRINGSEWU" ///
+    1811 "MESUJI" ///
+    1812 "TULANG BAWANG BARAT" ///
+    1813 "PESISIR BARAT" ///
+    1871 "BANDAR LAMPUNG" ///
+    1872 "METRO" ///
+    1901 "BANGKA" ///
+    1902 "BELITUNG" ///
+    1903 "BANGKA BARAT" ///
+    1904 "BANGKA TENGAH" ///
+    1905 "BANGKA SELATAN" ///
+    1906 "BELITUNG TIMUR" ///
+    1971 "PANGKALPINANG" ///
+    2101 "KARIMUN" ///
+    2102 "BINTAN" ///
+    2103 "NATUNA" ///
+    2104 "LINGGA" ///
+    2105 "KEPULAUAN ANAMBAS" ///
+    2171 "B A T A M" ///
+    2172 "TANJUNG PINANG" ///
+    3101 "KEPULAUAN SERIBU" ///
+    3171 "JAKARTA SELATAN" ///
+    3172 "JAKARTA TIMUR" ///
+    3173 "JAKARTA PUSAT" ///
+    3174 "JAKARTA BARAT" ///
+    3175 "JAKARTA UTARA" ///
+    3201 "BOGOR" ///
+    3202 "SUKABUMI" ///
+    3203 "CIANJUR" ///
+    3204 "BANDUNG" ///
+    3205 "GARUT" ///
+    3206 "TASIKMALAYA" ///
+    3207 "CIAMIS" ///
+    3208 "KUNINGAN" ///
+    3209 "CIREBON" ///
+    3210 "MAJALENGKA" ///
+    3211 "SUMEDANG" ///
+    3212 "INDRAMAYU" ///
+    3213 "SUBANG" ///
+    3214 "PURWAKARTA" ///
+    3215 "KARAWANG" ///
+    3216 "BEKASI" ///
+    3217 "BANDUNG BARAT" ///
+    3218 "PANGANDARAN" ///
+    3271 "BOGOR" ///
+    3272 "SUKABUMI" ///
+    3273 "BANDUNG" ///
+    3274 "CIREBON" ///
+    3275 "BEKASI" ///
+    3276 "DEPOK" ///
+    3277 "CIMAHI" ///
+    3278 "TASIKMALAYA" ///
+    3279 "BANJAR" ///
+    3301 "CILACAP" ///
+    3302 "BANYUMAS" ///
+    3303 "PURBALINGGA" ///
+    3304 "BANJARNEGARA" ///
+    3305 "KEBUMEN" ///
+    3306 "PURWOREJO" ///
+    3307 "WONOSOBO" ///
+    3308 "MAGELANG" ///
+    3309 "BOYOLALI" ///
+    3310 "KLATEN" ///
+    3311 "SUKOHARJO" ///
+    3312 "WONOGIRI" ///
+    3313 "KARANGANYAR" ///
+    3314 "SRAGEN" ///
+    3315 "GROBOGAN" ///
+    3316 "BLORA" ///
+    3317 "REMBANG" ///
+    3318 "PATI" ///
+    3319 "KUDUS" ///
+    3320 "JEPARA" ///
+    3321 "DEMAK" ///
+    3322 "SEMARANG" ///
+    3323 "TEMANGGUNG" ///
+    3324 "KENDAL" ///
+    3325 "BATANG" ///
+    3326 "PEKALONGAN" ///
+    3327 "PEMALANG" ///
+    3328 "TEGAL" ///
+    3329 "BREBES" ///
+    3371 "MAGELANG" ///
+    3372 "SURAKARTA" ///
+    3373 "SALATIGA" ///
+    3374 "SEMARANG" ///
+    3375 "PEKALONGAN" ///
+    3376 "TEGAL" ///
+    3401 "KULON PROGO" ///
+    3402 "BANTUL" ///
+    3403 "GUNUNGKIDUL" ///
+    3404 "SLEMAN" ///
+    3471 "YOGYAKARTA" ///
+    3501 "PACITAN" ///
+    3502 "PONOROGO" ///
+    3503 "TRENGGALEK" ///
+    3504 "TULUNGAGUNG" ///
+    3505 "BLITAR" ///
+    3506 "KEDIRI" ///
+    3507 "MALANG" ///
+    3508 "LUMAJANG" ///
+    3509 "JEMBER" ///
+    3510 "BANYUWANGI" ///
+    3511 "BONDOWOSO" ///
+    3512 "SITUBONDO" ///
+    3513 "PROBOLINGGO" ///
+    3514 "PASURUAN" ///
+    3515 "SIDOARJO" ///
+    3516 "MOJOKERTO" ///
+    3517 "JOMBANG" ///
+    3518 "NGANJUK" ///
+    3519 "MADIUN" ///
+    3520 "MAGETAN" ///
+    3521 "NGAWI" ///
+    3522 "BOJONEGORO" ///
+    3523 "TUBAN" ///
+    3524 "LAMONGAN" ///
+    3525 "GRESIK" ///
+    3526 "BANGKALAN" ///
+    3527 "SAMPANG" ///
+    3528 "PAMEKASAN" ///
+    3529 "SUMENEP" ///
+    3571 "KEDIRI" ///
+    3572 "BLITAR" ///
+    3573 "MALANG" ///
+    3574 "PROBOLINGGO" ///
+    3575 "PASURUAN" ///
+    3576 "MOJOKERTO" ///
+    3577 "MADIUN" ///
+    3578 "SURABAYA" ///
+    3579 "BATU" ///
+    3601 "PANDEGLANG" ///
+    3602 "LEBAK" ///
+    3603 "TANGERANG" ///
+    3604 "SERANG" ///
+    3671 "TANGERANG" ///
+    3672 "CILEGON" ///
+    3673 "SERANG" ///
+    3674 "TANGERANG SELATAN" ///
+    5101 "JEMBRANA" ///
+    5102 "TABANAN" ///
+    5103 "BADUNG" ///
+    5104 "GIANYAR" ///
+    5105 "KLUNGKUNG" ///
+    5106 "BANGLI" ///
+    5107 "KARANGASEM" ///
+    5108 "BULELENG" ///
+    5171 "DENPASAR" ///
+    5201 "LOMBOK BARAT" ///
+    5202 "LOMBOK TENGAH" ///
+    5203 "LOMBOK TIMUR" ///
+    5204 "SUMBAWA" ///
+    5205 "DOMPU" ///
+    5206 "BIMA" ///
+    5207 "SUMBAWA BARAT" ///
+    5208 "LOMBOK UTARA" ///
+    5271 "MATARAM" ///
+    5272 "BIMA" ///
+    5301 "SUMBA BARAT" ///
+    5302 "SUMBA TIMUR" ///
+    5303 "KUPANG" ///
+    5304 "TIMOR TENGAH SELATAN" ///
+    5305 "TIMOR TENGAH UTARA" ///
+    5306 "BELU" ///
+    5307 "ALOR" ///
+    5308 "LEMBATA" ///
+    5309 "FLORES TIMUR" ///
+    5310 "SIKKA" ///
+    5311 "ENDE" ///
+    5312 "NGADA" ///
+    5313 "MANGGARAI" ///
+    5314 "ROTE NDAO" ///
+    5315 "MANGGARAI BARAT" ///
+    5316 "SUMBA TENGAH" ///
+    5317 "SUMBA BARAT DAYA" ///
+    5318 "NAGEKEO" ///
+    5319 "MANGGARAI TIMUR" ///
+    5320 "SABU RAIJUA" ///
+    5321 "MALAKA" ///
+    5371 "KUPANG" ///
+    6101 "SAMBAS" ///
+    6102 "BENGKAYANG" ///
+    6103 "LANDAK" ///
+    6104 "MEMPAWAH" ///
+    6105 "SANGGAU" ///
+    6106 "KETAPANG" ///
+    6107 "SINTANG" ///
+    6108 "KAPUAS HULU" ///
+    6109 "SEKADAU" ///
+    6110 "MELAWI" ///
+    6111 "KAYONG UTARA" ///
+    6112 "KUBU RAYA" ///
+    6171 "PONTIANAK" ///
+    6172 "SINGKAWANG" ///
+    6201 "KOTAWARINGIN BARAT" ///
+    6202 "KOTAWARINGIN TIMUR" ///
+    6203 "KAPUAS" ///
+    6204 "BARITO SELATAN" ///
+    6205 "BARITO UTARA" ///
+    6206 "SUKAMARA" ///
+    6207 "LAMANDAU" ///
+    6208 "SERUYAN" ///
+    6209 "KATINGAN" ///
+    6210 "PULANG PISAU" ///
+    6211 "GUNUNG MAS" ///
+    6212 "BARITO TIMUR" ///
+    6213 "MURUNG RAYA" ///
+    6271 "PALANGKA RAYA" ///
+    6301 "TANAH LAUT" ///
+    6302 "KOTABARU" ///
+    6303 "BANJAR" ///
+    6304 "BARITO KUALA" ///
+    6305 "TAPIN" ///
+    6306 "HULU SUNGAI SELATAN" ///
+    6307 "HULU SUNGAI TENGAH" ///
+    6308 "HULU SUNGAI UTARA" ///
+    6309 "TABALONG" ///
+    6310 "TANAH BUMBU" ///
+    6311 "BALANGAN" ///
+    6371 "BANJARMASIN" ///
+    6372 "BANJARBARU" ///
+    6401 "PASER" ///
+    6402 "KUTAI BARAT" ///
+    6403 "KUTAI KARTANEGARA" ///
+    6404 "KUTAI TIMUR" ///
+    6405 "BERAU" ///
+    6409 "PENAJAM PASER UTARA" ///
+    6411 "MAHAKAM ULU" ///
+    6471 "BALIKPAPAN" ///
+    6472 "SAMARINDA" ///
+    6474 "BONTANG" ///
+    6501 "MALINAU" ///
+    6502 "BULUNGAN" ///
+    6503 "TANA TIDUNG" ///
+    6504 "NUNUKAN" ///
+    6571 "TARAKAN" ///
+    7101 "BOLAANG MONGONDOW" ///
+    7102 "MINAHASA" ///
+    7103 "KEPULAUAN SANGIHE" ///
+    7104 "KEPULAUAN TALAUD" ///
+    7105 "MINAHASA SELATAN" ///
+    7106 "MINAHASA UTARA" ///
+    7107 "BOLAANG MONGONDOW UTARA" ///
+    7108 "SIAU TAGULANDANG BIARO" ///
+    7109 "MINAHASA TENGGARA" ///
+    7110 "BOLAANG MONGONDOW SELATAN" ///
+    7111 "BOLAANG MONGONDOW TIMUR" ///
+    7171 "MANADO" ///
+    7172 "BITUNG" ///
+    7173 "TOMOHON" ///
+    7174 "KOTAMOBAGU" ///
+    7201 "BANGGAI KEPULAUAN" ///
+    7202 "BANGGAI" ///
+    7203 "MOROWALI" ///
+    7204 "POSO" ///
+    7205 "DONGGALA" ///
+    7206 "TOLI TOLI" ///
+    7207 "BUOL" ///
+    7208 "PARIGI MOUTONG" ///
+    7209 "TOJO UNA UNA" ///
+    7210 "SIGI" ///
+    7211 "BANGGAI LAUT" ///
+    7212 "MOROWALI UTARA" ///
+    7271 "PALU" ///
+    7301 "KEPULAUAN SELAYAR" ///
+    7302 "BULUKUMBA" ///
+    7303 "BANTAENG" ///
+    7304 "JENEPONTO" ///
+    7305 "TAKALAR" ///
+    7306 "GOWA" ///
+    7307 "SINJAI" ///
+    7308 "MAROS" ///
+    7309 "PANGKAJENE DAN KEPULAUAN" ///
+    7310 "BARRU" ///
+    7311 "BONE" ///
+    7312 "SOPPENG" ///
+    7313 "WAJO" ///
+    7314 "SIDENRENG RAPPANG" ///
+    7315 "PINRANG" ///
+    7316 "ENREKANG" ///
+    7317 "LUWU" ///
+    7318 "TANA TORAJA" ///
+    7322 "LUWU UTARA" ///
+    7325 "LUWU TIMUR" ///
+    7326 "TORAJA UTARA" ///
+    7371 "MAKASSAR" ///
+    7372 "PAREPARE" ///
+    7373 "PALOPO" ///
+    7401 "BUTON" ///
+    7402 "MUNA" ///
+    7403 "KONAWE" ///
+    7404 "KOLAKA" ///
+    7405 "KONAWE SELATAN" ///
+    7406 "BOMBANA" ///
+    7407 "WAKATOBI" ///
+    7408 "KOLAKA UTARA" ///
+    7409 "BUTON UTARA" ///
+    7410 "KONAWE UTARA" ///
+    7411 "KOLAKA TIMUR" ///
+    7412 "KONAWE KEPULAUAN" ///
+    7413 "MUNA BARAT" ///
+    7414 "BUTON TENGAH" ///
+    7415 "BUTON SELATAN" ///
+    7471 "KENDARI" ///
+    7472 "BAUBAU" ///
+    7501 "BOALEMO" ///
+    7502 "GORONTALO" ///
+    7503 "POHUWATO" ///
+    7504 "BONE BOLANGO" ///
+    7505 "GORONTALO UTARA" ///
+    7571 "GORONTALO" ///
+    7601 "MAJENE" ///
+    7602 "POLEWALI MANDAR" ///
+    7603 "MAMASA" ///
+    7604 "MAMUJU" ///
+    7605 "PASANGKAYU" ///
+    7606 "MAMUJU TENGAH" ///
+    8101 "KEPULAUAN TANIMBAR" ///
+    8102 "MALUKU TENGGARA" ///
+    8103 "MALUKU TENGAH" ///
+    8104 "BURU" ///
+    8105 "KEPULAUAN ARU" ///
+    8106 "SERAM BAGIAN BARAT" ///
+    8107 "SERAM BAGIAN TIMUR" ///
+    8108 "MALUKU BARAT DAYA" ///
+    8109 "BURU SELATAN" ///
+    8171 "AMBON" ///
+    8172 "TUAL" ///
+    8201 "HALMAHERA BARAT" ///
+    8202 "HALMAHERA TENGAH" ///
+    8203 "KEPULAUAN SULA" ///
+    8204 "HALMAHERA SELATAN" ///
+    8205 "HALMAHERA UTARA" ///
+    8206 "HALMAHERA TIMUR" ///
+    8207 "PULAU MOROTAI" ///
+    8208 "PULAU TALIABU" ///
+    8271 "TERNATE" ///
+    8272 "TIDORE KEPULAUAN" ///
+    9101 "FAKFAK" ///
+    9102 "KAIMANA" ///
+    9103 "TELUK WONDAMA" ///
+    9104 "TELUK BINTUNI" ///
+    9105 "MANOKWARI" ///
+    9111 "MANOKWARI SELATAN" ///
+    9112 "PEGUNUNGAN ARFAK" ///
+    9201 "RAJA AMPAT" ///
+    9202 "SORONG" ///
+    9203 "SORONG SELATAN" ///
+    9204 "MAYBRAT" ///
+    9205 "TAMBRAUW" ///
+    9271 "SORONG" ///
+    9403 "JAYAPURA" ///
+    9408 "KEPULAUAN YAPEN" ///
+    9409 "BIAK NUMFOR" ///
+    9419 "SARMI" ///
+    9420 "KEEROM" ///
+    9426 "WAROPEN" ///
+    9427 "SUPIORI" ///
+    9428 "MAMBERAMO RAYA" ///
+    9471 "JAYAPURA" ///
+    9501 "MERAUKE" ///
+    9502 "BOVEN DIGOEL" ///
+    9503 "MAPPI" ///
+    9504 "ASMAT" ///
+    9601 "MIMIKA" ///
+    9602 "DOGIYAI" ///
+    9603 "DEIYAI" ///
+    9604 "NABIRE" ///
+    9605 "PANIAI" ///
+    9606 "INTAN JAYA" ///
+    9607 "PUNCAK" ///
+    9608 "PUNCAK JAYA" ///
+    9701 "NDUGA" ///
+    9702 "JAYAWIJAYA" ///
+    9703 "LANNY JAYA" ///
+    9704 "TOLIKARA" ///
+    9705 "MAMBERAMO TENGAH" ///
+    9706 "YALIMO" ///
+    9707 "YAHUKIMO" ///
+    9708 "PEGUNUNGAN BINTANG"
+label values kode_kabkota kode_kabkota_lbl
+*==============================================================================
+* END OF LABELS AND VALUES
+*==============================================================================

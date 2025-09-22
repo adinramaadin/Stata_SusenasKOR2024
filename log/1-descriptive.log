@@ -1,0 +1,45 @@
+----------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:\Users\adinr\Documents\_8_Magang\_01_Smeru\_02_Stata\log/1-descriptive.log
+  log type:  text
+ opened on:  22 Oct 2002, 12:35:22
+
+. 
+. * Load the data
+. frame rename default datart
+
+. import dbase using "$susenas2024/ssn202403_kor_rt.dbf"
+--Break--
+r(1);
+
+end of do-file
+
+--Break--
+r(1);
+
+. do "C:\Users\adinr\AppData\Local\Temp\STD4b90_00001n.tmp"
+
+. /*****************************FILE HEADER**************************************
+> * PROJECT    : Child Development Indicators Analysis - SUSENAS 2023
+> * FILE       : 01_child_development_analysis.do  
+> * AUTHOR     : Adin
+> * DATE       : September 21, 2025
+> * VERSION    : Stata 19.5
+> * 
+> * PURPOSE    : This do file analyzes key child development indicators using 
+> *              SUSENAS 2023 data across multiple domains:
+> *              
+> *              1. Cognitive Development - PAUD participation by region and 
+> *                 disability status 
+> *              2. Basic Education - Gross enrollment rates in primary 
+> *                 education by region, disability status, poverty, and gender
+> *              3. Social Development - Poor Household/Families 
+> *                                 with children (0-17 years)
+> *
+> * DATA       : SUSENAS March 2024 (Kor & KP modules)
+> * FOCUS      : Regional disparities and inclusion of children with disabilities
+> ******************************************************************************/
+. 
+. clear all
+
+. cap log close
